@@ -9,6 +9,8 @@ def index(li, idx):
 
 
 def encode(text):
+    """Function for encoding text"""
+
     result = []
     for x, y in zip(text, KEY):
         result.append(index(
@@ -19,6 +21,8 @@ def encode(text):
 
 
 def decode(text):
+    """Function for decoding text"""
+
     result = []
     for x, y in zip(text, KEY):
         result.append(index(
